@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * @author INHE0985
+ * @author shixin
  * @date 2021/9/2 17:46
  */
 @Data
@@ -17,7 +17,7 @@ import lombok.ToString;
 public class DBModel1 {
 
     @Excel(name="列名")
-    private String fileName;
+    private String columnName;
     @Excel(name="类型")
     private String type;
     @Excel(name="大小")
@@ -29,6 +29,8 @@ public class DBModel1 {
     @Excel(name="字段描述")
     private String notes;
     @Excel(name="表描述")
-    private String desc;
+    private String tableDesc;
+    @Excel(name="表名称")
+    private String tableName;
 
 }
